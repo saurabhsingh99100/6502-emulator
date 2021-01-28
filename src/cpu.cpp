@@ -1,4 +1,7 @@
 #include <iostream>
+#include <string>
+#include <fstream>
+
 #include "6502defs.hpp"
 
 bool vb = true; //verbose
@@ -40,6 +43,15 @@ class MEM
     inline void write(Word Address, Byte Value)
     {
         Data[Address] = Value;
+    }
+
+    /**
+     * Fills the memory with contents of a binary file
+     * @param filename
+     */
+    void fill(std::string filename)
+    {
+        
     }
 };
 
@@ -168,10 +180,10 @@ class CPU
         mem = m;
     }
 
-
     /**
-     * Runs the cpu for specified cycles
-     * @param cycles cycles
+     * @brief run cpu for specified cycles
+     * 
+     * @param cycles 
      */
     void run(u32 cycles)
     {
@@ -264,21 +276,3 @@ class CPU
         mem->reset();
     }   
 };
-
-
-
-int main()
-{
-    MEM memory;
-    CPU cpu(&memory);
-    cpu.reset();
-    cpu.print_state();
-
-    memory.write(0xFFFC,0xA9);
-    memory.write(0xFFFD,0xAA);
-
-
-    cpu.run(5);
-
-    return 0;
-}
