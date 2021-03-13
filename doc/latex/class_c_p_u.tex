@@ -1,0 +1,65 @@
+\hypertarget{class_c_p_u}{}\doxysection{CPU Class Reference}
+\label{class_c_p_u}\index{CPU@{CPU}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_p_u_a9fe1d3325c3f49c349e0d56b4933485c}{CPU}} (\mbox{\hyperlink{class_m_e_m}{MEM}} $\ast$m)
+\item 
+void \mbox{\hyperlink{class_c_p_u_af4fcb0a8441d50c4109ff121e391f325}{run}} (u32 cycles)
+\begin{DoxyCompactList}\small\item\em run cpu for specified cycles \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_p_u_aba7d4abd3e9c40c714157857b32a6f9c}{print\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_c_p_u_a56cd79f5f27f0528f46582c4fe977278}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_c_p_u}{CPU}} class impments the 6502 processor 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_p_u_a9fe1d3325c3f49c349e0d56b4933485c}\label{class_c_p_u_a9fe1d3325c3f49c349e0d56b4933485c}} 
+\index{CPU@{CPU}!CPU@{CPU}}
+\index{CPU@{CPU}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{CPU()}{CPU()}}
+{\footnotesize\ttfamily CPU\+::\+CPU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_m}{MEM}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_c_p_u}{CPU}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em m} & pointer to memory object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_p_u_aba7d4abd3e9c40c714157857b32a6f9c}\label{class_c_p_u_aba7d4abd3e9c40c714157857b32a6f9c}} 
+\index{CPU@{CPU}!print\_state@{print\_state}}
+\index{print\_state@{print\_state}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{print\_state()}{print\_state()}}
+{\footnotesize\ttfamily void CPU\+::print\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints current cpu state \mbox{\Hypertarget{class_c_p_u_a56cd79f5f27f0528f46582c4fe977278}\label{class_c_p_u_a56cd79f5f27f0528f46582c4fe977278}} 
+\index{CPU@{CPU}!reset@{reset}}
+\index{reset@{reset}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void CPU\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the cpu \mbox{\Hypertarget{class_c_p_u_af4fcb0a8441d50c4109ff121e391f325}\label{class_c_p_u_af4fcb0a8441d50c4109ff121e391f325}} 
+\index{CPU@{CPU}!run@{run}}
+\index{run@{run}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void CPU\+::run (\begin{DoxyParamCaption}\item[{u32}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+run cpu for specified cycles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cycles} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cpu.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_m_e_m}{}\doxysection{MEM Class Reference}
+\label{class_m_e_m}\index{MEM@{MEM}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_m_e_m_ae7929a23d05b1384da29c44726b40f38}{reset}} ()
+\item 
+Byte \mbox{\hyperlink{class_m_e_m_a9521f25c227e92e48df59c7a9d7ff096}{fetch}} (Word Address)
+\item 
+void \mbox{\hyperlink{class_m_e_m_a497e56805037a8e4f4bf96d669e4cb1c}{write}} (Word Address, Byte Value)
+\item 
+void \mbox{\hyperlink{class_m_e_m_a52a31e4ae6abbb1151fe4df2b3ae50f2}{fill}} (std\+::string filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Memory class, to emulate 64Kb memory 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_e_m_a9521f25c227e92e48df59c7a9d7ff096}\label{class_m_e_m_a9521f25c227e92e48df59c7a9d7ff096}} 
+\index{MEM@{MEM}!fetch@{fetch}}
+\index{fetch@{fetch}!MEM@{MEM}}
+\doxysubsubsection{\texorpdfstring{fetch()}{fetch()}}
+{\footnotesize\ttfamily Byte MEM\+::fetch (\begin{DoxyParamCaption}\item[{Word}]{Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fetches a byte from memory 
+\begin{DoxyParams}{Parameters}
+{\em Address} & memory address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Byte at address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_m_a52a31e4ae6abbb1151fe4df2b3ae50f2}\label{class_m_e_m_a52a31e4ae6abbb1151fe4df2b3ae50f2}} 
+\index{MEM@{MEM}!fill@{fill}}
+\index{fill@{fill}!MEM@{MEM}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void MEM\+::fill (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fills the memory with contents of a binary file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_e_m_ae7929a23d05b1384da29c44726b40f38}\label{class_m_e_m_ae7929a23d05b1384da29c44726b40f38}} 
+\index{MEM@{MEM}!reset@{reset}}
+\index{reset@{reset}!MEM@{MEM}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void MEM\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets all memory locations to 0 \mbox{\Hypertarget{class_m_e_m_a497e56805037a8e4f4bf96d669e4cb1c}\label{class_m_e_m_a497e56805037a8e4f4bf96d669e4cb1c}} 
+\index{MEM@{MEM}!write@{write}}
+\index{write@{write}!MEM@{MEM}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void MEM\+::write (\begin{DoxyParamCaption}\item[{Word}]{Address,  }\item[{Byte}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write a byte to memory 
+\begin{DoxyParams}{Parameters}
+{\em Address} & address \\
+\hline
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cpu.\+cpp\end{DoxyCompactItemize}

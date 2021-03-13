@@ -181,7 +181,7 @@ class CPU
     }
 
     /**
-     * @brief run cpu for specified cycles
+     * @brief run cpu for specified
      * 
      * @param cycles 
      */
